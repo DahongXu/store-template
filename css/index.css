@@ -1,0 +1,796 @@
+body {
+    font-size: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clear {
+    display: block;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F2F2F6;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #B5B5B5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #CFCFCF;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #B5B5B5
+}
+
+.container_box {
+    padding: 15px;
+    text-align: center;
+    background: #F2F2F6;
+    min-height: 900px;
+    overflow: hidden;
+}
+
+/* 左侧模块 */
+
+.container_left {
+    float: left;
+    width: 240px;
+    padding: 0;
+}
+
+.left_title {
+    margin-bottom: 20px;
+}
+
+.tit1 {
+    font-size: 12px;
+    color: #595961;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.tit2 {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.left_nav {
+    width: 210px;
+    color: #595961;
+    height: 30px;
+}
+
+.nav1 {
+    width: 60px;
+    height: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav2 {
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.act {
+    color: #2589FF;
+    position: relative;
+}
+
+.act:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    border-radius: 2px;
+    width: 30px;
+    border-bottom: 3px solid #2589FF;
+}
+
+.img_list_box {
+    height: 668px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.img_list {
+    float: left;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.img_list_right {
+    padding-left: 10px;
+}
+
+.img_box {
+    width: 100px;
+    height: 85px;
+    display: inline-block;
+    border: 1px solid #E3E2E5;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.img_box img {
+    width: 88px;
+    height: 50px;
+}
+
+.img_title {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* 中间模块 */
+
+.container_center {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.center_box {
+    margin-top: 50px;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.main_box {
+    width: 385px;
+    height: 465px;
+    background-color: #f2f2f6;
+}
+
+.main_box_contant {
+    width: 377px;
+    background-color: #ffffff;
+}
+
+.center_box_head {
+    width: 385px;
+    height: 64px;
+    display: block;
+    background: url("../image/centerHead.png") no-repeat;
+}
+
+.center_box_main {
+    position: relative;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.config_content_box {
+    overflow: hidden;
+    width: 377px;
+    border: 1px solid #ffffff;
+    position: relative;
+    cursor: pointer;
+}
+
+.upDiv {
+    position: absolute;
+    z-index: 100;
+    background: green;
+    width: 377px;
+    opacity: 0;
+    display: block;
+    overflow: hidden;
+    height: 178px;
+}
+
+.config_content_head {
+    background: #ffffff;
+    width: 100%;
+    height: 30px;
+    color: #2589FF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 30px;
+    display: none;
+    z-index:2;
+}
+
+.config_content_title {
+    padding-left: 10px;
+}
+
+.config_content_del {
+    float: right;
+    padding-right: 10px;
+}
+
+.config_content {
+    margin: 0 auto;
+}
+
+.config_content_box img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.solid_box {
+    border: 1px dotted #2589FF;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 18px;
+    color: #2589FF;
+    background: #B0E2FF;
+}
+
+.compontent_active {
+    border: 1px dotted #2589FF;
+}
+
+/* 右侧模块 */
+
+.container_right {
+    float: right;
+    width: 360px;
+    padding: 0;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.container_right_box {
+    background: #ffffff;
+    border-radius: 3px;
+    height: 100%;
+    min-height: 667px;
+}
+
+.configForm {
+    height: 100%;
+}
+
+.configBox {
+    border-radius: 6px;
+    background-color: #fff !important;
+    color: #595961;
+    overflow: hidden;
+}
+
+.right_box_head {
+    padding: 20px 10px;
+    color: #595961;
+    font-size: 12px;
+}
+
+.right_nav1 {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.right_nav2 {
+    color: #9797A1;
+}
+
+.right_box_body {
+    padding: 10px;
+}
+
+/* 拖拽时隐藏的图片 */
+
+.hiddenImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+}
+
+/*轮播广告组件详情*/
+
+.img_Contant {
+    border: 1px solid #E3E2E5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: none;
+    width: 100%;
+}
+
+.img_Contant img {
+    margin: 10px 5px;
+    width: 328px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.m-b-md {
+    margin-bottom: 20px;
+}
+
+.changeStyleBtn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #E3E2E5;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #595961;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.advertisement-module {
+    width: 340px;
+    height: 60px;
+    border: 1px solid #E3E2E5;
+    border-radius: 4px;
+}
+
+/* 进度条 */
+
+.progressLabel {
+    line-height: 60px;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.ngrs-range-slider {
+    box-shadow: none;
+    width: 224px;
+    border: none;
+    position: relative;
+    margin: 20px 0;
+    padding: 4px;
+    background: #fff;
+    border-radius: 4px;
+    float: left;
+}
+
+.scale_panel {
+    color: #999;
+    width: 200px;
+    position: absolute;
+    line-height: 18px;
+    left: 10px;
+    top: 10px;
+}
+
+.scale span {
+    background: url(../image/scroll.gif) no-repeat;
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    left: 98px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.scale {
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-color: #E4E4E4;
+    border-left: 1px #83BBD9 solid;
+    width: 200px;
+    height: 6px;
+    position: relative;
+    font-size: 0px;
+    border-radius: 3px;
+}
+
+.scale div {
+    background-repeat: repeat-x;
+    background-color: #2589ff;
+    width: 100px;
+    position: absolute;
+    height: 6px;
+    bottom: 0;
+}
+
+#progressValue {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+}
+
+/* 选择轮播样式 */
+
+.select-style li {
+    width: 280px;
+    height: 200px;
+    background: #fafafa;
+    border: 1px solid #e3e2e5;
+    margin-bottom: 50px !important;
+    line-height: 200px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.modal-dialog {
+    width: 60%;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.select-style {
+    padding: 0;
+}
+
+.select-style li label {
+    padding-left: 0;
+    min-height: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.select-style li img {
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+.select-style li .m-t {
+    margin-top: 0;
+    line-height: 18px;
+}
+
+.radioType {
+    width: 16px;
+    height: 16px;
+    min-height: 16px;
+    background: #fff;
+    border: 1px solid #B2AEBC;
+    border-radius: 100%;
+    vertical-align: -3px;
+}
+
+/* 轮播图图片设置 */
+
+.sortImgDiv {
+    border: 1px solid #E3E2E5;
+    border-radius: 4px;
+    width: 338px;
+    min-height: 192px;
+    float: left;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.sortImgHead {
+    background: #efefef;
+    border-radius: 4px 4px 0 0;
+    height: 40px;
+}
+
+.sortImgTitle {
+    line-height: 40px;
+    float: left;
+}
+
+.sortImgDel {
+    line-height: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+.m-l-sm {
+    margin-left: 10px;
+}
+
+.m-l-md {
+    margin-left: 20px;
+}
+
+.m-r-sm {
+    margin-right: 10px;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-t-sm {
+    margin-top: 10px;
+}
+
+.m-b-sm {
+    margin-bottom: 10px;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.text-blue {
+    color: #2589FF !important;
+}
+
+.radio-inline {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+}
+
+.form-group:before {
+    content: "";
+    display: table;
+}
+
+.form-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px;
+    font-weight: normal;
+}
+
+.img-upload .img {
+    display: inline-block;
+    position: relative;
+}
+
+.img-upload .img-lg img {
+    width: 80px !important;
+}
+
+.img-upload .img img {
+    width: 40px;
+    height: 40px;
+}
+
+.img-upload .del-img {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    cursor: pointer;
+    background-image: url("../image/close.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+}
+
+.img-upload .default-img {
+    float: left;
+    margin-right: 20px;
+}
+
+.img-upload .select-img-btn {
+    font-size: 12px;
+    padding: 0;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    width: 80px;
+}
+
+.text-notice-info {
+    font-size: 12px;
+    color: #9797A1;
+}
+
+.radio-inline input[type='radio'] {
+    margin-top: 0;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    min-height: 16px;
+    background: #fff;
+    border: 1px solid #B2AEBC;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: -3px;
+}
+
+.select-imgUrl-btn {
+    font-size: 12px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+
+.select-img-input {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin-top: -34px;
+}
+
+.rule-store-left {
+    width: 255px;
+    padding-right: 0;
+    position: relative;
+    height: 30px;
+    margin-left: 86px;
+}
+
+.rule-store-left.min {
+    width: 235px;
+}
+
+.rule-store-left .store-rule {
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    z-index: 2;
+    color: #595961;
+}
+
+.rule-store-left input {
+    padding-left: 58px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.store-outlink-item.m-t {
+    margin-top: 12px !important;
+}
+
+.select-appid-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    z-index: 2;
+    color: #2589FF !important;
+}
+
+.store-outlink-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.rule-store-left .store-rule {
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    z-index: 2;
+    color: #595961;
+}
+
+.store-outlink-item-tags {
+    font-size: 12px;
+    color: #9797A1;
+    line-height: 20px;
+}
+
+.col-sm-offset-3 {
+    width: 235px;
+    padding-right: 0;
+}
+
+/* 选择轮播图图片 */
+
+.scroll-y {
+    overflow-y: auto;
+}
+
+.select-img li {
+    float: left;
+    position: relative;
+}
+
+.select-img-box {
+    position: relative;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.select-img-cover {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.select-img-tit {
+    width: 120px;
+    margin-top: 5px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.select-img-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: none;
+}
+
+.select-img-mask div {
+    display: inline-block;
+}
+
+.select-img-mask img {
+    top: 50px;
+    left: 45px;
+    position: absolute;
+    border: 0;
+    vertical-align: middle;
+}
+
+.select-img-mask:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 0;
+}
+
+.add-img-box {
+    border: 1px solid #E3E2E5;
+    border-radius: 4px;
+    width: 340px;
+    height: 64px;
+    float: left;
+    line-height: 64px;
+}
+
+.add-img-btn {
+    margin-left: 10px;
+}
+
+.add-img-span {
+    float: right;
+    margin-right: 20px;
+}
+
+.widget-submit-box {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.widget-submit-btn {
+    background: #FFFFFF !important;
+    border: 1px solid #2589FF !important;
+    border-radius: 4px !important;
+    color: #2589FF !important;
+    width: 90px !important;
+}

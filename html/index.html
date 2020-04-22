@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>微商城</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/sortable.js"></script>
+    <script src="../layer/layer.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            changeComponent(1);//切换组件类型
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container_box">
+        <div class="container_left">
+            <div class="left_title">
+                <span class="tit1">组件库</span>
+                <span class="tit2">拖拽使用</span>
+            </div>
+            <div class="left_nav">
+                <span class="nav1" onclick="changeComponent(1)">基本组件</span>
+                <span class="nav2" onclick="changeComponent(2)">营销组件</span>
+            </div>
+            <div class="img_list_box">
+            </div>
+        </div>
+        <div class="container_center">
+            <div class="center_box">
+                <div class="main_box">
+                    <div class="main_box_contant">
+                        <div class="center_box_head"></div>
+                        <div class="center_box_main" id="items">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container_right">
+            <div class="container_right_box">
+                <div class="configForm">
+                    <div class="configBox">
+                        <div class="right_box_head">
+                            <span class="right_nav1">组件设置</span>
+                            <span class="right_nav2">轮播广告</span>
+                        </div>
+                        <div class="right_box_body">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 拖放的组件图片 -->
+    <div class="hiddenImg" draggable="true" id="demo">
+    </div>
+    <!-- 修改轮播样式的模态框 -->
+    <div class="modal fade" id="carouselModal" tabindex="-1" role="dialog" aria-labelledby="carouselModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times; </button>
+                    <h4 class="modal-title">
+                        选择轮播样式 </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="select-style clear">
+                        <ul>
+                            <li class="col-sm-3 text-center">
+                                <label>
+                                    <img src="../image/carousel_style_1.png">
+                                    <div class="m-t">
+                                        <input type="radio" name="style" class="radioType" value="1" />&nbsp;样式1
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="col-sm-3 text-center">
+                                <label>
+                                    <img src="../image/carousel_style_2.png">
+                                    <div class="m-t">
+                                        <input type="radio" name="style" class="radioType" value="2" />&nbsp;样式2
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="col-sm-3 text-center">
+                                <label>
+                                    <img src="../image/carousel_style_3.png">
+                                    <div class="m-t">
+                                        <input type="radio" name="style" class="radioType" value="3" />&nbsp;样式3
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="col-sm-3 text-center">
+                                <label>
+                                    <img src="../image/carousel_style_4.png">
+                                    <div class="m-t">
+                                        <input type="radio" name="style" class="radioType" value="4" />&nbsp;样式4
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="changeCarouselStyle()"> 确认 </button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
